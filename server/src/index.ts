@@ -13,10 +13,22 @@ app.get("/", (req: Request, res: Response) => {
   res.send("We like to eat pizza");
 });
 
-app.get("/api/champions", async (req: Request, res: Response) => {
-  const champs = await prisma.champion.findMany()
+app.get("/api/ticket", async (req: Request, res: Response) => {
+  const tickets = await prisma.ticket.findMany()
 
-  res.send(champs)
+  res.send(tickets)
+});
+
+app.get("/api/van", async (req: Request, res: Response) => {
+  const vans = await prisma.van.findMany()
+
+  res.send(vans)
+});
+
+app.get("/api/user", async (req: Request, res: Response) => {
+  const users = await prisma.user.findMany()
+
+  res.send(users)
 });
 
 app.listen(port, () => {

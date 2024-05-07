@@ -13,13 +13,43 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Champion {
-  id          Int       @id @default(autoincrement())
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+model User {
+  user_id     Int      @id @default(autoincrement())
   name        String
-  baseHealth  Int
-  baseMana    Int
-  healthRegen Float
-  manaRegen   Float
+  email       String   @unique
+  password    String
+  tickets     Ticket[] // One user can have multiple tickets
+  vans        Van[]    // One user can have multiple vans
+}
+
+
+model Ticket {
+  ticket_id               Int      @id @default(autoincrement())
+  passenger_name          String
+  passenger_classification String
+  passenger_address       String
+  date                    DateTime  @default(now())
+  phone_number            String
+  destination             String
+  seat_number             Int
+  fare                    Float
+  van                     Van      @relation(fields: [van_id], references: [van_id])
+  van_id                  Int
+  user                    User     @relation(fields: [user_id], references: [user_id])
+  user_id                 Int
+}
+
+
+model Van {
+  van_id           Int      @id @default(autoincrement())
+  number           Int
+  model            String
+  plate_no         String
+  standby_time     DateTime   
+  departure_time   DateTime
+  driver_name      String
+  capacity         Int
+  date_of_trip     DateTime
+  tickets          Ticket[] // One van can have multiple tickets
+  user             User[]   // One van can belong to multiple users
 }
