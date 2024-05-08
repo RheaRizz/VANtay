@@ -18,10 +18,11 @@ model User {
   name        String
   email       String   @unique
   password    String
-  tickets     Ticket[] // One user can have multiple tickets
-  vans        Van[]    // One user can have multiple vans
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt   DateTime @updatedAt @db.Timestamptz(6)
+  tickets     Ticket[] 
+  vans        Van[]    
 }
-
 
 model Ticket {
   ticket_id               Int      @id @default(autoincrement())
@@ -33,23 +34,34 @@ model Ticket {
   destination             String
   seat_number             Int
   fare                    Float
+  createdAt               DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt               DateTime @updatedAt @db.Timestamptz(6)
   van                     Van      @relation(fields: [van_id], references: [van_id])
   van_id                  Int
   user                    User     @relation(fields: [user_id], references: [user_id])
   user_id                 Int
 }
 
-
 model Van {
   van_id           Int      @id @default(autoincrement())
-  number           Int
   model            String
   plate_no         String
-  standby_time     DateTime   
-  departure_time   DateTime
-  driver_name      String
   capacity         Int
-  date_of_trip     DateTime
-  tickets          Ticket[] // One van can have multiple tickets
-  user             User[]   // One van can belong to multiple users
+  createdAt        DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt        DateTime @updatedAt @db.Timestamptz(6)
+  tickets          Ticket[] 
+  user             User[]   
+  trips            Trip[]   
+}
+
+model Trip {
+  trip_id          Int      @id @default(autoincrement())
+  van              Van      @relation(fields: [van_id], references: [van_id])
+  van_id           Int
+  standby_time     DateTime
+  departure_time   DateTime
+  destination      String
+  driver_name      String
+  createdAt        DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt        DateTime @updatedAt @db.Timestamptz(6)
 }
