@@ -4,6 +4,7 @@ import { ticketRouter } from "../src/routes/ticketRoutes";
 import { userRouter } from "../src/routes/userRoutes";
 import { vanRouter } from "../src/routes/vanRoutes";
 import { tripRouter } from "../src/routes/tripRoutes";
+import authRouter from "../src/routes/authRoutes"
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.use("/api/ticket", ticketRouter);
 app.use("/api/user", userRouter);
 app.use("/api/van", vanRouter);
 app.use("/api/trip", tripRouter);
+app.use("/api", authRouter);
 
 app.listen(port, () => {
   console.log(`[server]: Server is running at http://localhost:${port}`);
