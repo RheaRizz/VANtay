@@ -1,11 +1,11 @@
 import express from "express";
-import { signup, login, getProfile } from "../controllers/authController";
+import { authController } from "../controllers/authController";
 import { authMiddleware } from "../middlewares/authMiddleware";
 
 const router = express.Router();
 
-router.post("/signup", signup);
-router.post("/login", login);
-router.get("/profile", authMiddleware, getProfile);
+router.post("/signup", authController.signup);
+router.post("/login", authController.login);
+router.get("/profile", authMiddleware, authController.getProfile);
 
 export default router;
