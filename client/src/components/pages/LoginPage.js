@@ -17,7 +17,7 @@ const LoginPage = () => {
       const response = await login({ email, password });
       console.log("Login successful:", response);
       localStorage.setItem('token', response.token);
-      navigate('/'); // Use navigate to redirect
+      navigate('/cashier'); // Use navigate to redirect
     } catch (error) {
       setError(error.error || "Login failed");
     }

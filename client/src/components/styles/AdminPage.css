@@ -1,0 +1,67 @@
+/* AdminPage.css */
+
+.admin-page {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    color: white;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Button-like background */
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: flex-start; /* Start items from the top */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  

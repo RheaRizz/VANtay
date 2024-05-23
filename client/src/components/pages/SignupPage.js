@@ -38,7 +38,7 @@ const SignupPage = () => {
         role: formData.role,
       });
       console.log("Signup successful:", response);
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       setError(error.error || "Signup failed");
     }
