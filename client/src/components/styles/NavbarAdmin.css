@@ -41,3 +41,11 @@
     font-size: 16px;
     
   }
+  .logout-button {
+    background: none;
+    border: none;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+  }

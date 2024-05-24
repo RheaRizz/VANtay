@@ -1,8 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 import '../styles/NavBar.css'; 
 
 const NavBar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate('/');
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-content">
@@ -10,7 +16,7 @@ const NavBar = () => {
         <ul className="navbar-menu">
           <li><a href="#second-section">Cashier</a></li>
           <li><Link to="/admin">Admin</Link></li>
-          <li>Logout</li>
+          <li onClick={handleLogout}>Logout</li>
         </ul>
       </div>
     </nav>
