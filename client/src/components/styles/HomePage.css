@@ -1,0 +1,28 @@
+/* styles.css */
+
+.homepage-bg {
+    background-image: url('../images/HomepageBckgnd.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+  }
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 560PX;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem; 
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  
