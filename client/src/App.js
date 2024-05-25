@@ -8,6 +8,8 @@ import ManageUser from './components/pages/ManageUser';
 import UpdateUser from './components/pages/UpdateUser';
 import ManageVan from './components/pages/ManageVan';
 import ManageTrip from './components/pages/ManageTrip';
+import CreateTrip from './components/pages/CreateTrip';
+import UpdateTrip from './components/pages/UpdateTrip';
 import UpdateVan from './components/pages/UpdateVan';
 import CreateVan from './components/pages/CreateVan';
 
@@ -24,6 +26,8 @@ function App() {
           <Route path="manage-trip" element={<ManageTrip />}>
           </Route>
           <Route path="create-van" element={<CreateVan />} />
+          <Route path="create-trip" element={<CreateTrip />} />
+          <Route path="update-trip/:id" element={<UpdateTrip />} />
           <Route path="manage-users" element={<ManageUser />} />
           <Route path="update-user/:userId" element={<UpdateUser />} />
           <Route path="update-van/:id" element={<UpdateVan />} />

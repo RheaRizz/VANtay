@@ -5,8 +5,15 @@ const prisma = new PrismaClient();
 export class TripService {
   async createTrip(data: any) {
     try {
+      const { standby_time, departure_time, destination, driver_name, vanId } = data;
       return await prisma.trip.create({
-        data,
+        data: {
+          standby_time: new Date(standby_time), 
+          departure_time: new Date(departure_time),
+          destination,
+          driver_name,
+          vanId,
+        },
       });
     } catch (error: any) {
       throw new Error(`Error in createTrip: ${error.message}`);
@@ -33,14 +40,20 @@ export class TripService {
 
   async updateTrip(id: number, data: any) {
     try {
+      const { standby_time, departure_time } = data;
       return await prisma.trip.update({
         where: { id },
-        data,
+        data: {
+          ...data,
+          standby_time: new Date(standby_time), 
+          departure_time: new Date(departure_time), 
+        },
       });
     } catch (error: any) {
-      throw new Error(`Error in updateTicket: ${error.message}`);
+      throw new Error(`Error in updateTrip: ${error.message}`);
     }
   }
+  
 
   async deleteTrip(id: number) {
     try {

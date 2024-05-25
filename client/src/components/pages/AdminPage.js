@@ -1,15 +1,15 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import ManageVan from './ManageVan';
-//import ManageTrip from './ManageTrip';
+import ManageTrip from './ManageTrip';
 import ManageUser from './ManageUser';
 import UpdateUser from './UpdateUser';
 import UpdateVan from './UpdateVan';
 import NavbarAdmin from './NavbarAdmin';
 import CreateVan from './CreateVan';
-//import CreateTrip from './CreateTrip';
+import CreateTrip from './CreateTrip';
 import '../styles/AdminPage.css';
-//import UpdateTrip from './UpdateTrip';
+import UpdateTrip from './UpdateTrip';
 
 const AdminPage = () => {
   return (
@@ -32,6 +32,9 @@ const AdminPage = () => {
           <Route path="manage-van" element={<ManageVan />} />
           <Route path="create-van" element={<CreateVan />} />
           <Route path="update-van/:id" element={<UpdateVan />} />
+          <Route path="update-trip/:id" element={<UpdateTrip />} />
+          <Route path="manage-trip" element={<ManageTrip />} />
+          <Route path="create-trip" element={<CreateTrip />} />
         </Routes>
       </div>
     </div>
