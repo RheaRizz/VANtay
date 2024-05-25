@@ -1,0 +1,88 @@
+.manage-van-page .van-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+    justify-content: center; 
+  }
+  
+  .manage-van-page .van-item {
+    flex: 0 1 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .manage-van-page h2 {
+    color: white; 
+    margin-top: 5px; 
+  }
+  
+  .manage-van-page h3 {
+    color: white; 
+    margin-top: 10px; 
+  }
+
+  
+  .van-item {
+    background-color: transparent; 
+    color: white; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; 
+    padding: 20px;
+  }
+
+  .btn-create-van {
+    background-color: #222425; 
+    color: white; 
+    padding: 12px;
+    border-radius: 15px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #4b4848c5; 
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-update-van {
+    background-color: transparent; 
+    color: white; 
+    padding: 10px 20px;
+    border-radius: 4px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #ccc; 
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px; 
+    transition: background-color 0.3s;
+  }
+  
+  .btn-delete-van {
+    background-color: transparent; 
+    color: white; 
+    padding: 10px 20px;
+    border-radius: 4px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #ccc; 
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  .btn-update-van:hover {
+    background-color: rgba(2, 2, 2, 0.629); 
+  }
+  
+  .btn-delete-van:hover {
+    background-color: rgba(2, 2, 2, 0.629); 
+  }
+  
+  @media (max-width: 768px) {
+    .form-group {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,159 @@
+.update-user-page {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #20202a60; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    width: 500px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-red-500 {
+    color: red;
+  }
+  
+  .mb-4 {
+    margin-bottom: 16px;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .text-gray-700 {
+    color: #d8cbcb; 
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  
+  input.transparent-input, select.transparent-input {
+    background-color: rgba(1, 1, 1, 0); 
+    color: #ffefeffe; 
+    border: 1px solid #d1cfcf29; 
+    border-radius: 8px; 
+    padding: 8px;
+    width: 100%; 
+  }
+  
+  input.transparent-input:focus, select.transparent-input:focus {
+    box-shadow: 0 0 5px rgba(49, 130, 206, 0.5); 
+  }
+  
+  .shadow {
+    box-shadow: none;
+  }
+  
+  .appearance-none {
+    appearance: none;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .leading-tight {
+    line-height: 1.25;
+  }
+  
+  .focus\:outline-none:focus {
+    outline: none;
+  }
+  
+  .focus\:shadow-outline:focus {
+    box-shadow: 0 0 5px rgba(49, 130, 206, 0.5);
+  }
+  
+  .bg-blue-500 {
+    background-color: #3182ce;
+  }
+  
+  .hover\:bg-blue-700:hover {
+    background-color: #4c4e51;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .rounded {
+    border-radius: 0.375rem;
+  }
+  
+  .focus\:outline-none:focus {
+    outline: none;
+  }
+  
+  .focus\:shadow-outline:focus {
+    box-shadow: 0 0 5px rgba(49, 130, 206, 0.5);
+  }
+  
+  .submit-user {
+    background-color: #222425; 
+      color: white; 
+      padding: 12px;
+      border-radius: 10px; 
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+      border: 1px solid #4b4848c5; 
+      cursor: pointer;
+      margin-top: 5px;
+      transition: background-color 0.3s;
+  }
+  
+  .cancel-user {
+    background-color: #222425; 
+      color: white; 
+      padding: 12px;
+      border-radius: 10px; 
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+      border: 1px solid #4b4848c5; 
+      cursor: pointer;
+      margin-top: 5px;
+      transition: background-color 0.3s;
+  }
+  
+  .submit-user:hover {
+    background-color: rgba(2, 2, 2, 0.629); 
+  }
+  
+  .cancel-user:hover {
+    background-color: rgba(2, 2, 2, 0.629); 
+  }

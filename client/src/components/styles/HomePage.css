@@ -1,0 +1,57 @@
+
+.homepage-bg {
+  background-image: url('../images/HomepageBckgnd.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.text-center1 {
+  text-align: center;
+  margin-top: 20%; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+
+.second-section {
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #e5e7eb; 
+  padding: 1rem; 
+  margin: 1rem; 
+  text-align: center; 
+  color: black;
+  border: 1px solid black; 
+}
+
+.card h3 {
+  font-size: 1.125rem; 
+  font-weight: bold; 
+}
+
+.btn-manage-ticket {
+  background-color: #6b7280; 
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem; 
+  display: inline-block;
+}
+
+.btn-manage-ticket:hover {
+  background-color: #4b5563;
+}
