@@ -1,84 +1,83 @@
-/* CreateVan.css */
-
 .create-van-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: white;
-    min-height: 100vh;
-    padding-top: calc(80px + 20px); /* Adjust this value as needed */
-  }
-  
-  .form-card {
-    background-color: #f5f5f5;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-4xl {
-    font-size: 2.25rem;
-    margin-bottom: 20px;
-  }
-  
-  .font-bold {
-    font-weight: bold;
-  }
-  
-  .create-van-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20202a60; 
+  margin-top: 100px;
+}
+
+.form-card {
+  padding: 30px; 
+  border-radius: 0px;
+  background-color: transparent; 
+  border: 2px solid #3f3c3c43; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  width: 100%; 
+  max-width: 800px;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.549); 
+}
+
+.create-van-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 48%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #cccccc18; 
+  background-color: transparent; 
+  border-radius: 15px;
+  color: #dbd4d4; 
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-buttons .btn-submit,
+.form-buttons .btn-cancel {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #cccccc18;
+  cursor: pointer;
+  background-color: #6c757d00; 
+  color: white; 
+}
+
+@media (max-width: 768px) {
   .form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form-group input {
-    padding: 10px;
     width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
-  
-  .form-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .btn-submit, .btn-cancel {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn-submit {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .btn-cancel {
-    background-color: #f44336;
-    color: white;
-  }
-  
+}
+
+.btn-submit:hover {
+  background-color: rgba(2, 2, 2, 0.629); 
+}
+
+.btn-cancel:hover {
+  background-color: rgba(2, 2, 2, 0.629); 
+}

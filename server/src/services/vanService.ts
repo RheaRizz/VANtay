@@ -1,12 +1,18 @@
+
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
 export class VanService {
-  async createVan(data: any) {
+  async createVan(data: { model: string; plate_no: string; capacity: number; userId: number }) {
     try {
       return await prisma.van.create({
-        data,
+        data: {
+          model: data.model,
+          plate_no: data.plate_no,
+          capacity: data.capacity,
+          userId: data.userId,
+        },
       });
     } catch (error: any) {
       throw new Error(`Error in createVan: ${error.message}`);
@@ -31,7 +37,7 @@ export class VanService {
     }
   }
 
-  async updateVan(id: number, data: any) {
+  async updateVan(id: number, data: { model?: string; plate_no?: string; capacity?: number; userId?: number }) {
     try {
       return await prisma.van.update({
         where: { id },

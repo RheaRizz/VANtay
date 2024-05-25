@@ -8,6 +8,8 @@ import ManageUser from './components/pages/ManageUser';
 import UpdateUser from './components/pages/UpdateUser';
 import ManageVan from './components/pages/ManageVan';
 import ManageTrip from './components/pages/ManageTrip';
+import UpdateVan from './components/pages/UpdateVan';
+import CreateVan from './components/pages/CreateVan';
 
 
 function App() {
@@ -18,15 +20,13 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/cashier" element={<HomePage />} />
         <Route path="/admin" element={<AdminPage />}>
-    
           <Route path="manage-van" element={<ManageVan />} />
           <Route path="manage-trip" element={<ManageTrip />}>
-
-            
           </Route>
+          <Route path="create-van" element={<CreateVan />} />
           <Route path="manage-users" element={<ManageUser />} />
           <Route path="update-user/:userId" element={<UpdateUser />} />
-          
+          <Route path="update-van/:id" element={<UpdateVan />} />
         </Route>
       </Routes>
     </Router>

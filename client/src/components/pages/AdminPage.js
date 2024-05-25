@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-//import ManageVan from './ManageVan';
+import ManageVan from './ManageVan';
 //import ManageTrip from './ManageTrip';
 import ManageUser from './ManageUser';
 import UpdateUser from './UpdateUser';
-//import UpdateVan from './UpdateVan';
+import UpdateVan from './UpdateVan';
 import NavbarAdmin from './NavbarAdmin';
-//import CreateVan from './CreateVan';
+import CreateVan from './CreateVan';
 //import CreateTrip from './CreateTrip';
 import '../styles/AdminPage.css';
 //import UpdateTrip from './UpdateTrip';
@@ -29,6 +29,9 @@ const AdminPage = () => {
         <Routes>
           <Route path="manage-users" element={<ManageUser />} />
           <Route path="update-user/:userId" element={<UpdateUser />} />
+          <Route path="manage-van" element={<ManageVan />} />
+          <Route path="create-van" element={<CreateVan />} />
+          <Route path="update-van/:id" element={<UpdateVan />} />
         </Routes>
       </div>
     </div>
