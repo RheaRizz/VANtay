@@ -10,6 +10,8 @@ import CreateVan from './CreateVan';
 import CreateTrip from './CreateTrip';
 import '../styles/AdminPage.css';
 import UpdateTrip from './UpdateTrip';
+import ManageTicket from './ManageTicket';
+import UpdateTicket  from './UpdateTicket';
 
 const AdminPage = () => {
   return (
@@ -18,9 +20,10 @@ const AdminPage = () => {
         <h2>Admin Dashboard</h2>
         <nav>
           <ul>
-            <li><Link to="manage-van">Manage Van</Link></li>
-            <li><Link to="manage-trip">Manage Trip</Link></li>
             <li><Link to="manage-users">Manage Users</Link></li>
+            <li><Link to="manage-van">Manage Vans</Link></li>
+            <li><Link to="manage-trip">Manage Trips</Link></li>
+            <li><Link to="manage-ticket">Manage Tickets</Link></li>
           </ul>
         </nav>
       </div>
@@ -35,6 +38,8 @@ const AdminPage = () => {
           <Route path="update-trip/:id" element={<UpdateTrip />} />
           <Route path="manage-trip" element={<ManageTrip />} />
           <Route path="create-trip" element={<CreateTrip />} />
+          <Route path="update-ticket/:id" element={<UpdateTicket />} />
+          <Route path="manage-ticket" element={<ManageTicket />} />
         </Routes>
       </div>
     </div>

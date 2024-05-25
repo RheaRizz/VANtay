@@ -1,0 +1,86 @@
+.update-ticket-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20202a60;
+  margin-top: 50px;
+}
+
+.form-card-update {
+  padding: 30px;
+  border-radius: 0px;
+  background-color: transparent;
+  border: 2px solid #3f3c3c43;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Full width */
+  max-width: 800px;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.update-ticket-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: rgba(2, 2, 2, 0.629);
+}
+
+.btn-cancel:hover {
+  background-color: rgba(2, 2, 2, 0.629);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="number"] {
+  width: calc(50% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black; /* Add this line to change the font color to black */
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bg-blue-500 {
+  background-color: #6b7280;
+}
+
+.bg-blue-600:hover {
+  background-color: #2563eb;
+}
+
+.bg-gray-500 {
+  background-color: #6b7280;
+}
+
+.bg-gray-600:hover {
+  background-color: #4b5563;
+}
