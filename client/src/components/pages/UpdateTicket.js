@@ -68,13 +68,13 @@ const UpdateTicket = () => {
   };
 
   const handleCancel = () => {
-    navigate("/manage-tickets");
+    navigate("/admin/manage-ticket");
   };
 
   return (
     <div className="update-ticket-page">
       <div className="form-card-update">
-        <h2 className="text-center text-2xl font-bold mb-4">Update Ticket</h2>
+        <h2 className="text-center-update">Update Ticket</h2>
         <form onSubmit={handleSubmit} className="update-ticket-form">
           <label>
             Passenger Name:
@@ -148,20 +148,11 @@ const UpdateTicket = () => {
               onChange={handleChange}
             />
           </label>
-          <div className="form-buttons">
-            <button
-              type="submit"
-              className="btn-submit bg-blue-500 text-white 
-              py-2 px-4 rounded-lg hover:bg-blue-600"
-            >
+          <div className="form-buttons-update">
+            <button type="submit" className="btn-submit-update">
               Save
             </button>
-            <button
-              type="button"
-              onClick={handleCancel}
-              className="btn-cancel bg-gray-500 text-white 
-              py-2 px-4 rounded-lg hover:bg-gray-600"
-            >
+            <button type="button" onClick={handleCancel} className="btn-cancel-update">
               Cancel
             </button>
           </div>

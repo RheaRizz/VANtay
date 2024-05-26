@@ -7,9 +7,9 @@
 
 .sidebar {
   width: 200px;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: #0f0f11d2; 
   padding: 20px;
-  color: white;
+  color: rgba(70, 68, 68, 0.458);
 }
 
 .sidebar h2 {

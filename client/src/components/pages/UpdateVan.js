@@ -50,7 +50,7 @@ const UpdateVan = () => {
   return (
     <div className="update-van-page">
       <div className="form-card-update">
-        <div className="text-center">
+        <div className="text-center-van">
           <h2 className="text-4xl font-bold">Update Van</h2>
           <form className="update-van-form" onSubmit={handleSubmit}>
             <div className="form-group">

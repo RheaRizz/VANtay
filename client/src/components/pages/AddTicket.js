@@ -87,10 +87,10 @@ const AddTicket = () => {
 
   return (
     <div className="create-ticket-page">
-      <div className="form-card">
-        <h2 className="text-center">Create New Ticket</h2>
+      <div className="form-card-ticket">
+        <h2 className="text-center-ticket">Create New Ticket</h2>
         <form onSubmit={handleSubmit} className="create-ticket-form">
-          <div className="form-group">
+          <div className="form-group-ticket">
             <label>Passenger Name:</label>
             <input
               type="text"
@@ -98,7 +98,7 @@ const AddTicket = () => {
               onChange={(e) => setPassengerName(e.target.value)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-ticket">
             <label>Passenger Classification:</label>
             <input
               type="text"
@@ -106,7 +106,7 @@ const AddTicket = () => {
               onChange={(e) => setPassengerClassification(e.target.value)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-ticket">
             <label>Passenger Address:</label>
             <input
               type="text"
@@ -114,7 +114,7 @@ const AddTicket = () => {
               onChange={(e) => setPassengerAddress(e.target.value)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-ticket">
             <label>Passenger Phone No:</label>
             <input
               type="text"
@@ -122,7 +122,7 @@ const AddTicket = () => {
               onChange={(e) => setPassengerPhoneNo(e.target.value)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-ticket">
             <label>Date:</label>
             <input
               type="datetime-local"
@@ -130,7 +130,7 @@ const AddTicket = () => {
               onChange={(e) => setDate(e.target.value)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-ticket">
             <label>Destination:</label>
             <input
               type="text"
@@ -138,7 +138,7 @@ const AddTicket = () => {
               onChange={(e) => setDestination(e.target.value)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-ticket">
             <label>Seat No:</label>
             <input
               type="number"
@@ -146,7 +146,7 @@ const AddTicket = () => {
               onChange={(e) => setSeatNo(e.target.value)}
             />
           </div>
-          <div className="form-group">
+          <div className="form-group-ticket">
             <label>Fare:</label>
             <input
               type="number"

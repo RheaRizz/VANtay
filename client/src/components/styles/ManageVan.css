@@ -1,8 +1,9 @@
 .manage-van-page .van-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px; 
-    justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; 
+  justify-content: center; 
   }
   
   .manage-van-page .van-item {

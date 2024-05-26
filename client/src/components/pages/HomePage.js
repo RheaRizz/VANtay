@@ -38,7 +38,7 @@ const HomePage = () => {
         {trips.map((trip) => (
           <div
             key={trip.id}
-            className="card"
+            className="second-card"
           >
             <h3 className="text-lg font-bold">Trip to {trip.destination}</h3>
             <p>Standby Time: {new Date(trip.standby_time).toLocaleString()}</p>
