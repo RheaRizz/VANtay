@@ -4,22 +4,29 @@ import LoginPage from './components/pages/LoginPage';
 import SignupPage from './components/pages/SignupPage';
 import HomePage from './components/pages/HomePage';
 import AdminPage from './components/pages/AdminPage';
+import ManageUser from './components/pages/ManageUser';
+import UpdateUser from './components/pages/UpdateUser';
 import ManageVan from './components/pages/ManageVan';
-import VanForToday from './components/pages/VanForToday';
-import CreateVan from './components/pages/CreateVan';
+import ManageTrip from './components/pages/ManageTrip';
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/cashier" element={<HomePage />} />
-        <Route path="/signup" element={<SignupPage />} />
         <Route path="/" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/cashier" element={<HomePage />} />
         <Route path="/admin" element={<AdminPage />}>
-          <Route path="van-for-today" element={<VanForToday />} />
-          <Route path="manage-van" element={<ManageVan />}>
-            <Route path="create-van" element={<CreateVan />} />
+    
+          <Route path="manage-van" element={<ManageVan />} />
+          <Route path="manage-trip" element={<ManageTrip />}>
+
+            
           </Route>
+          <Route path="manage-users" element={<ManageUser />} />
+          <Route path="update-user/:userId" element={<UpdateUser />} />
+          
         </Route>
       </Routes>
     </Router>

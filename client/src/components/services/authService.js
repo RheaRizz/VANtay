@@ -1,4 +1,4 @@
-// src/services/authService.js
+
 export const logout = () => {
     // Clear any stored tokens or session data here
     localStorage.removeItem('authToken');
