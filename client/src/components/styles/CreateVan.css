@@ -1,0 +1,83 @@
+.create-van-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20202a60; 
+  margin-top: 100px;
+}
+
+.form-card {
+  padding: 30px; 
+  border-radius: 0px;
+  background-color: transparent; 
+  border: 2px solid #3f3c3c43; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  width: 100%; 
+  max-width: 800px;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.549); 
+}
+
+.create-van-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 48%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #cccccc18; 
+  background-color: transparent; 
+  border-radius: 15px;
+  color: #dbd4d4; 
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-buttons .btn-submit,
+.form-buttons .btn-cancel {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #cccccc18;
+  cursor: pointer;
+  background-color: #6c757d00; 
+  color: white; 
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    width: 100%;
+  }
+}
+
+.btn-submit:hover {
+  background-color: rgba(2, 2, 2, 0.629); 
+}
+
+.btn-cancel:hover {
+  background-color: rgba(2, 2, 2, 0.629); 
+}

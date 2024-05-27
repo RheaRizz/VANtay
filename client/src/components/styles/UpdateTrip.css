@@ -1,0 +1,75 @@
+
+
+.update-trip-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#20202a60; 
+    box-shadow:  0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+  }
+  
+  .update-trip-page h2{
+    margin-top: 20px;
+
+  }
+
+  .update-trip-form label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    color: #d8cbcbdf;
+    padding-bottom: 10px;
+  }
+  
+  .update-trip-form input,
+  .update-trip-form select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #c2b4b44b;
+    border-radius: 10px;
+    background-color: transparent; 
+    color: #d8cbcbdf; 
+  }
+  
+  .update-trip-form input:focus,
+  .update-trip-form select:focus {
+    border-color: #3182ce; 
+    box-shadow: 0 0 5px rgba(49, 130, 206, 0.5);
+    outline: none; 
+  }
+  
+  .update-trip-form button {
+    background-color: #222425; 
+    color: white; 
+    padding: 12px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #4b4848c5; 
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .update-trip-form .bg-blue-500:hover {
+    background-color: rgba(2, 2, 2, 0.629);
+  }
+  
+  .update-trip-form .bg-gray-500 {
+    background-color: #222425; 
+    color: white;
+    padding: 12px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #4b4848c5; 
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .update-trip-form .bg-gray-500:hover {
+    background-color: rgba(2, 2, 2, 0.629);
+  }
+  
