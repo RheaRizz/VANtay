@@ -1,0 +1,94 @@
+.update-ticket-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card-update {
+  background-color:#20202a60; 
+  box-shadow:  0 4px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+.form-card-update h2{
+  color: white; 
+  margin-top: 5px;
+  margin-left: 250px; 
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.update-ticket-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.update-ticket-form label {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%; 
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding-right: 10px;
+  color: #fffbfb;
+}
+
+.update-ticket-form input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #c2b4b44b;
+  border-radius: 10px;
+  background-color: transparent; 
+  color: #fbf4f4; 
+  margin-top: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-submit-update {
+  background-color: #222425; 
+  color: white; 
+  padding: 12px;
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #4b4848c5; 
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.3s;
+  width: 100px;
+}
+
+.btn-cancel-update {
+  background-color: #222425; 
+  color: white; 
+  padding: 12px;
+  border-radius: 10px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #4b4848c5; 
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 10px;
+  transition: background-color 0.3s; 
+  width: 100px;
+}
+
+.btn-cancel-update:hover {
+  background-color: rgba(2, 2, 2, 0.629);
+}
+
+.btn-submit-update:hover {
+  background-color: rgba(2, 2, 2, 0.629);
+}

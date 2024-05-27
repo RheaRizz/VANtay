@@ -1,0 +1,83 @@
+/* LoginPage.css */
+.login-page {
+  background-image: url('../images/LoginBckgnd.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: rgba(76, 83, 83, 0.255); 
+  padding: 100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  max-width: 600px;
+  width: 200%;
+  margin-right: 50px;
+  margin-top: -30px;
+}
+
+.login-container h2 {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff; 
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -40px;
+  
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  font-family: 'Poppins', sans-serif; /* Using Poppins font */;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f0ebeb;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid rgba(6, 6, 6, 0.908);/* Transparent black border */
+  background-color: rgba(121, 119, 119, 0.547); /* Transparent white background */
+  border-radius: 15px;
+}
+
+
+.login-form button {
+  padding: 5px;
+  margin-top: 20px;
+  background-color: #343537; /* Dark gray color */
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow */
+  width: 150px; /* Adjust width as needed */
+  margin-left: auto; /* Set left margin to auto */
+  margin-right: auto; /* Set right margin to auto */
+}
+
+.login-form button:hover {
+  background-color: #1a1a1b;
+}
+
+.signup-text {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  color: #fff; /* White color */
+  text-align: center; /* Center align the text */
+  margin-top: 30px
+}
+
+.signup-link {
+  text-decoration: underline; /* Add underline to the link */
+  color: #fff; /* White color */
+ 
+}
